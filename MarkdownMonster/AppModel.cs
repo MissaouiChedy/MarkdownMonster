@@ -195,6 +195,22 @@ namespace MarkdownMonster
                 return _renderThemeNames;
             }
         }
+        /// <summary>
+        /// A list of ParserNames retrieved from loaded ParserAddins
+        /// </summary>
+        public List<string> ParserNames
+        {
+            get
+            {
+                return new List<string> { "parser1", "parser2", "parser3" };
+            }
+        }
+            
+        /// <summary>
+        /// A list of RenderThemes as retrieved based on the folder structure of hte
+        /// Preview folder.
+        /// </summary>
+
         private readonly List<string> _renderThemeNames = new List<string>();
 
 

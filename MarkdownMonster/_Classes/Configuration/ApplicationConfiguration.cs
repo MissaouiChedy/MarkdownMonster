@@ -70,6 +70,12 @@ namespace MarkdownMonster
         private string _RenderTheme;
 
         /// <summary>
+        /// Parser used to render the Preview.
+        /// </summary>
+        public string ParserName { get; set; }
+
+
+        /// <summary>
         /// Determines whether the preview attempts to sync to 
         /// the editor when previewing HTML.
         /// </summary>

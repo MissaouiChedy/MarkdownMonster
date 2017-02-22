@@ -476,6 +476,7 @@
                             <ColumnDefinition Width="100"  />
                             <ColumnDefinition Width="130" />
                             <ColumnDefinition Width="130" />
+                            <ColumnDefinition Width="130" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                     </Grid>
@@ -514,6 +515,16 @@
 
             </StatusBarItem>
             <StatusBarItem Grid.Column="7">
+                <ComboBox  HorizontalAlignment="Right"  Width="125"
+                           ToolTip="Parser"
+                           SelectedItem="{Binding Configuration.ParserName}" 
+                           IsSynchronizedWithCurrentItem="True" 
+                           ItemsSource="{Binding ParserNames}"
+                           Background="Transparent" BorderBrush="Transparent" BorderThickness="0"
+                           SelectionChanged="Parser_SelectionChanged" />
+
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="8">
                 <ComboBox  HorizontalAlignment="Right"  Width="44" ToolTip="Preview sync mode"                            
                            IsSynchronizedWithCurrentItem="True" Margin="0,0,15,0"    
                            SelectedValue="{Binding Configuration.PreviewSyncMode}" 

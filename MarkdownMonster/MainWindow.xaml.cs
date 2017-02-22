@@ -1468,6 +1468,10 @@ namespace MarkdownMonster
             PreviewMarkdownAsync();
         }
 
+        private void Parser_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show("Parser selection changed");
+        }
 
         private void HandleNamedPipe_OpenRequest(string filesToOpen)
         {
