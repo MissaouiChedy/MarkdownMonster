@@ -726,6 +726,12 @@
   <ItemGroup>
     <Folder Include="_Classes\Infrastructure\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomParserAddin\CustomParserAddin.csproj">
+      <Project>{a4604249-5318-430a-969a-82766a1777f7}</Project>
+      <Name>CustomParserAddin</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

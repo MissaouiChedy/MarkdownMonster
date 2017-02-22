@@ -47,6 +47,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MarkdownMonsterWeb", "Markd
 		SlnRelativePath = "MarkdownMonsterWeb\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomParserAddin", "CustomParserAddin\CustomParserAddin.csproj", "{A4604249-5318-430A-969A-82766A1777F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +128,16 @@ Global
 		{6AB5E445-9660-454B-BF02-506000EED978}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{6AB5E445-9660-454B-BF02-506000EED978}.SandBox|Any CPU.ActiveCfg = Debug|Any CPU
 		{6AB5E445-9660-454B-BF02-506000EED978}.SandBox|Any CPU.Build.0 = Debug|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.net40|Any CPU.ActiveCfg = Release|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.net40|Any CPU.Build.0 = Release|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.SandBox|Any CPU.ActiveCfg = Release|Any CPU
+		{A4604249-5318-430A-969A-82766A1777F7}.SandBox|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
