@@ -44,10 +44,11 @@ namespace MarkdownMonster.AddIns
         {
             get
             {
-                return AddIns
+                var a =  AddIns
                     .Where(ai => ai.GetType().IsSubclassOf(typeof(MarkdownMonsterParserAddin)))
                     .Cast<MarkdownMonsterParserAddin>()
                     .ToList();
+                return a;
             }
         }
 
@@ -513,6 +514,7 @@ namespace MarkdownMonster.AddIns
                         LoadAddinClasses(file);
                 }
             }
+            
         }
 
         public bool InstallAddin(string addinId)

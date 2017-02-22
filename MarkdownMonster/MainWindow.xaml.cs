@@ -225,14 +225,13 @@ namespace MarkdownMonster
                     AddinManager.Current.RaiseOnWindowLoaded();
                 }, DispatcherPriority.ApplicationIdle);
             });
-
-            
         }
 
         protected override void OnContentRendered(EventArgs e)
         {
             base.OnContentRendered(e);
             WindowState = mmApp.Configuration.WindowState;
+            Model.OnPropertyChanged(nameof(Model.ParserNames));
         }
 
         protected override void OnDeactivated(EventArgs e)
@@ -1470,7 +1469,7 @@ namespace MarkdownMonster
 
         private void Parser_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-        
+            PreviewMarkdownAsync();
         }
 
         private void HandleNamedPipe_OpenRequest(string filesToOpen)

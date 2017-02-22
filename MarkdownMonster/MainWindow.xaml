@@ -515,7 +515,8 @@
 
             </StatusBarItem>
             <StatusBarItem Grid.Column="7">
-                <ComboBox  HorizontalAlignment="Right"  Width="125"
+                <ComboBox  Name="ParserComboBox"
+                           HorizontalAlignment="Right"  Width="125"
                            ToolTip="Parser"
                            SelectedItem="{Binding Configuration.ParserName}" 
                            IsSynchronizedWithCurrentItem="True" 
