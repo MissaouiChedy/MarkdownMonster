@@ -8,7 +8,6 @@ using System.Windows;
 using Newtonsoft.Json;
 using Westwind.Utilities.Configuration;
 
-
 namespace MarkdownMonster
 {
 
@@ -72,8 +71,17 @@ namespace MarkdownMonster
         /// <summary>
         /// Parser used to render the Preview.
         /// </summary>
-        public string ParserName { get; set; }
-
+        public string ParserName
+        {
+            get { return _ParserName; }
+            set
+            {
+                if (value == _ParserName) return;
+                _ParserName = value;
+                OnPropertyChanged(nameof(ParserName));
+            }
+        }
+        private string _ParserName;
 
         /// <summary>
         /// Determines whether the preview attempts to sync to 

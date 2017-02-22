@@ -12,6 +12,7 @@ using System.Windows.Threading;
 using FontAwesome.WPF;
 using Microsoft.Win32;
 using Westwind.Utilities;
+using MarkdownMonster.AddIns;
 
 namespace MarkdownMonster
 {
@@ -195,6 +196,7 @@ namespace MarkdownMonster
                 return _renderThemeNames;
             }
         }
+        
         /// <summary>
         /// A list of ParserNames retrieved from loaded ParserAddins
         /// </summary>
@@ -202,7 +204,12 @@ namespace MarkdownMonster
         {
             get
             {
-                return new List<string> { "parser1", "parser2", "parser3" };
+                var parsers = new List<MarkdownMonsterParserAddin>
+                {
+                    new MarkDigAddin()
+                };
+                parsers.AddRange(AddinManager.Current.ParserAddins);
+                return parsers.Select(p => p.Name).ToList();
             }
         }
             

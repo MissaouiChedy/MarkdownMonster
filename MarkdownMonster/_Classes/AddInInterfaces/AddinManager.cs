@@ -40,6 +40,17 @@ namespace MarkdownMonster.AddIns
         /// </summary>
         public bool AddinsLoadingComplete { get; set; }
 
+        public List<MarkdownMonsterParserAddin> ParserAddins
+        {
+            get
+            {
+                return AddIns
+                    .Where(ai => ai.GetType().IsSubclassOf(typeof(MarkdownMonsterParserAddin)))
+                    .Cast<MarkdownMonsterParserAddin>()
+                    .ToList();
+            }
+        }
+
         public string ErrorMessage { get; set; }
 
         static AddinManager()
